@@ -102,6 +102,7 @@ function ImageViewing({
       onRequestClose={onRequestCloseEnhanced}
       supportedOrientations={["portrait"]}
       hardwareAccelerated
+      statusBarTranslucent
     >
       <StatusBarManager presentationStyle={presentationStyle} />
       <View style={[styles.container, { opacity, backgroundColor }]}>
@@ -172,7 +173,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     width: "100%",
     zIndex: 1,
-    top: 0,
+    top: 40,
   },
   footer: {
     position: "absolute",
